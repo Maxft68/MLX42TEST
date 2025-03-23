@@ -112,23 +112,32 @@ void	ft_hook(void *param)
 		{
 			player->instances[0].y -= 100;
 			move++;
+			printf("Moves =%d", move);
 		}
 		if (mlx_is_key_down(mlx, MLX_KEY_DOWN))
 		{
 			player->instances[0].y += 100;
 			move++;
+			printf("Moves =%d", move);
 		}
 		if (mlx_is_key_down(mlx, MLX_KEY_LEFT))
 		{
 			player->instances[0].x -= 100;
 			move++;
+			printf("Moves =%d", move);
 		}	
 		if (mlx_is_key_down(mlx, MLX_KEY_RIGHT))
 		{
 			player->instances[0].x += 100;
 			move++;
+			printf("Moves =%d", move);
 		}
 		last_press_time = mlx_get_time();
+		// if (moved)
+		// {
+		// 	move++;
+		// 	last_press_time = mlx_get_time();
+		// }
 	}
 }
 
