@@ -1,4 +1,4 @@
-
+aller voir dans le dossier build
 
 #include <stdio.h>
 #include <stdlib.h>
